@@ -25,6 +25,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: self-hosted
     steps:
+      - name: List files
+        run: ls -l
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
