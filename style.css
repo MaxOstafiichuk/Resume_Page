@@ -1,21 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*
-{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: 'Poppins', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
 body {
-    background: #FFEFD5;
+    background: rgb(3, 4, 18);
     display: flex;
-    justify-items: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: center;    
     min-height: 100vh;
-}
-.container {
     position: relative;
+}
+
+.photo {
+    position: fixed;
+    right: 0;  
+    top: 0;    
+    height: 100vh;
+    width: 30.49%; 
+    background-image: url('cv.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1; 
+}
+
+.container {
+    background: linear-gradient(to right, #0000FF 50%, transparent 50%);
+    position: absolute; 
+    top: 50%;           
+    left: 0;            
+    transform: translateY(-50%); 
     width: 100%;
     max-width: 1000px;
-    background: #DEB887;
+    min-height: 1000px;
+    left: 0;
+    background: #101c28;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container .left_Side {
+    background: linear-gradient(to right, #0000FF 50%, transparent 50%);
+    position: relative;
+    background: #0ff;
+    opacity: 0.8;
+    padding: 40px;
+    flex: 1; 
+    overflow: hidden;
+}
+
+.container .right_Side {
+    background: #101c28;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff; /* Neon glow effect */
+    padding: 40px;
+    flex: 1; 
 }
