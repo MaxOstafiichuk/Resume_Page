@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
 
 * {
     margin: 0;
@@ -16,18 +16,66 @@ body {
     position: relative;
 }
 
-.photo {
+.back {
     padding-left: 0%;
     position: fixed;
     right: 0;  
     top: 0;    
     height: 100vh;
     width: 30%; 
-    background-image: url('cv.jpg');
+    background-image: url('images/cv.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.5;
     z-index: -1; 
+}
+
+.imgBx {
+    width: 250px; 
+    height: 250px; 
+    overflow: hidden;
+    padding-bottom: 30%;
+    border-radius: 50%; 
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff; 
+}
+
+.profile_text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;;
+    font-size: 20px;
+    color: azure;
+    padding-bottom: 20px;
+}
+
+.profile_text .imgBx {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.profile_text .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.profile_text h2 {
+    font-size: 1.5em;
+    margin-top: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #0ff;
+}
+
+.main_photo {
+    width: 98%; 
+    height: auto; 
+    display: block;
+    position: relative;
 }
 
 .container {
@@ -57,5 +105,8 @@ body {
     background: #101c28;
     box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff; 
     padding: 40px;
-    flex: 1; 
+    align-items: top;
+    justify-content: center; 
+    display: flex;
 }
+
