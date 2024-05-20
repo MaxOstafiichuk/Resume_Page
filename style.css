@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
     margin: 0;
@@ -66,7 +67,6 @@ body {
 .profile_text h2 {
     font-size: 1.5em;
     margin-top: 25px;
-    text-transform: uppercase;
     text-align: center;
     line-height: 1.4em;
     border-bottom: 1px solid #0ff;
@@ -76,6 +76,68 @@ body {
 .profile_text h2 span {
     font-size: 0.8em;
     font-weight: 200;
+}
+
+.contact_Info {
+    padding-top: 40px;
+    font-family: 'Ubuntu', sans-serif;;
+
+}
+
+.contact_Info ul {
+    position: relative;
+}
+
+.contact_Info ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact_Info ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: azure;
+}
+
+.contact_Info ul li span {
+    color: azure;
+    font-weight: 600;
+}
+
+.contact_Info_Education li {
+    margin-bottom: 20px;
+}
+
+.contact_Info_Education h5  {
+    font-weight: 600;
+}
+
+.contact_Info_Education h4  {
+    font-weight: 500;
+}
+
+.contact_Info_Education ul li {
+    color: azure;
+    list-style: none;
+}
+
+.contact_Info_Courses ul li {
+    color: azure;
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.title {
+    color: azure;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-top: 35px;
 }
 
 .main_photo {
@@ -101,11 +163,11 @@ body {
 .container .left_Side {
     background: linear-gradient(to right, #0000FF 50%, transparent 50%);
     position: relative;
-    background: #0ff;
-    opacity: 0.8;
+    opacity: 1;
+    background: #101c28;
     padding: 40px;
     flex: 1; 
-    overflow: hidden;
+    border-right: 2px solid #0ff;
 }
 
 .container .right_Side {
@@ -115,5 +177,10 @@ body {
     align-items: top;
     justify-content: center; 
     display: flex;
+    flex-direction: column;
+}
+
+.main_text {
+    color: azure;
 }
 
