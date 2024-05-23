@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
     margin: 0;
@@ -9,7 +8,7 @@
 }
 
 body {
-    background: rgb(3, 4, 18);
+    background: #101c28;
     display: flex;
     justify-content: center; 
     align-items: center;    
@@ -131,6 +130,13 @@ body {
     margin: 10px 0;
 }
 
+.contact_Info_Languages ul li {
+    color: azure;
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
 .title {
     color: azure;
     font-weight: 700;
@@ -149,9 +155,8 @@ body {
 
 .container {
     position: absolute;
-    top: 50%;           
+    top: 0;           
     left: 0;            
-    transform: translateY(-50%); 
     width: 100%;
     max-width: 70%;
     min-height: 100%;
@@ -162,12 +167,16 @@ body {
 
 .container .left_Side {
     background: linear-gradient(to right, #0000FF 50%, transparent 50%);
-    position: relative;
+    position: sticky;
     opacity: 1;
     background: #101c28;
     padding: 40px;
     flex: 1; 
     border-right: 2px solid #0ff;
+}
+
+.left_Side {
+    position: fixed;
 }
 
 .container .right_Side {
@@ -184,3 +193,10 @@ body {
     color: azure;
 }
 
+a:hover {
+    color: azure;
+}
+
+a {
+    text-decoration: none;
+}
